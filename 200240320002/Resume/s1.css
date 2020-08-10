@@ -1,0 +1,71 @@
+.main-div {
+     display: flex; 
+     height: 150vh;
+     padding-left: 290px; 
+     padding-right: 270px;
+      
+}
+.left{
+    background:rgb(23, 23, 26); 
+    flex: 2.3;
+    border: 1px solid black;
+    color: aliceblue;
+}
+.right{
+    background:white;
+    flex:3.5;
+    border: 1px solid black;
+    
+}
+.name{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 35px;
+}   
+.img1{
+      
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 40vh;
+      width: 40vh;
+      margin: 0;
+      margin-left: 40px;
+      object-fit: cover;
+      border-radius: 850px;
+      border-top-left-radius: 950px;
+      border-bottom-left-radius: 950px;
+      border-top-right-radius: 950px;
+      border-bottom-right-radius: 950px;
+}
+.heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.heading1 {
+    font-family: cursive;
+    font-size: 22px;
+    background-color: rgb(63, 63, 59);
+    margin-top: 50px;
+    margin-left: 15px;
+    color: aliceblue;
+}
+.content{
+    margin: 18px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
