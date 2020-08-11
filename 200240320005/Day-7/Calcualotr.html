@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="cal.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="name">
+            CALCULATOR
+        </div>
+        <div class="box">
+            
+            <div class="ans">
+                <input type="text" placeholder="Enter Value Here" id="ans1">
+            </div>
+            
+            <div class="r1">
+                <div id="div7">
+                    <button id="7" onclick="n('7')">7</button>
+                </div>
+                <div id="div8">
+                    <button id="8" onclick="n('8')">8</button>
+                </div>
+                <div id="div9">
+                    <button id="9" onclick="n('9')">9</button>
+                </div>
+                <div id="division">
+                    <button id="divs" onclick="n('/')">/</button>
+                </div>
+            </div>
+            <div class="r2">
+                <div id="div4">
+                    <button id="4" onclick="n('4')">4</button>
+                </div>
+                <div id="div5">
+                    <button id="5" onclick="n('5')">5</button>
+                </div>
+                <div id="div6">
+                    <button id="6" onclick="n('6')">6</button>
+                </div>
+                <div id="multiple">
+                    <button id="mul" onclick="n('*')">*</button>
+                </div>
+            </div>
+            <div class="r3">
+                <div id="div1">
+                    <button id="1" onclick="n('1')">1</button>
+                </div>
+                <div id="div2">
+                    <button id="2" onclick="n('2')">2</button>
+                </div>
+                <div id="div3">
+                    <button id="3" onclick="n('3')">3</button>
+                </div>
+                <div id="subtract">
+                    <button id="sub" onclick="n('-')">-</button>
+                </div>
+            </div>
+            <div class="r4">
+                <div id="reset">
+                    <button id="res" onclick="reset()" type="reset">AC</button>
+                </div>
+                <div id="div0">
+                    <button id="0" onclick="n('0')">0</button>
+                </div>
+                <div id="dec">
+                    <button id="dec" onclick="n('.')">.</button>
+                </div>
+                <div id="equal">
+                    <button id="eqa" onclick="calculate()">=</button>
+                </div>
+                <div id="addition">
+                    <button id="add" onclick="n('+')">+</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
