@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+
+            background-color: white;
+
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .post-block {
+            justify-content: center;
+            align-items: center;
+
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 10px 10px;
+
+
+
+        }
+
+        #post {
+            display: flex;
+            background-color: powderblue;
+            border: 12px solid red;
+            padding: 15px;
+            border-radius: 50px 20px;
+            flex-direction: column;
+            margin: 15px;
+
+
+
+        }
+
+        #action {
+            display: flex;
+            background-color: yellow;
+            width: 100%;
+            justify-content: space-evenly;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="post-block">
+            <div id="post">
+
+
+
+                <img src="4.jpg" alt="" width="100%">
+                <div id="action">
+
+                    <div id="like_1"><button onclick="like" style="height: 50px; width: 70px; font-size: 24px;">Like
+                            &hearts;</button>
+                    </div>
+
+
+                    <textarea name="com-area" id="p1" cols="" rows=""></textarea>
+                    <div><button style="height: 50px; width: 120px; font-size: 24px;">Comment</button></div>
+
+                </div>
+                <div>
+
+
+
+                    <img src="5.jpg" alt="" width="100%">
+
+                    <div id="action">
+
+                        <div id="like_2"><button style="height: 50px; width: 70px; font-size: 24px;">Like
+                                &hearts;</button></div>
+
+                        <textarea name="com-area" id="p2" cols="" rows=""></textarea>
+                        <div><button style="height: 50px; width: 120px; font-size: 24px;">Comment</button></div>
+
+                    </div>
+                    <div>
+
+
+
+                        <img src="2.jpg" alt="" width="100%">
+                        <div id="action">
+
+                            <div id="like_3"><button style="height: 50px; width: 70px; font-size: 24px;">Like
+                                    &hearts;</button>
+                            </div>
+
+                            <textarea name="com-area" id="p3" cols="" rows=""></textarea>
+                            <div><button style="height: 50px; width: 120px; font-size: 24px; "
+                                    onclick="comm();">Comment</button></div>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+</body>
+
+</html>
