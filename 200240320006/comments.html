@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #respond {
+            margin-top: 40px;
+        }
+
+        #respond input[type='text'],
+        #respond input[type='email'],
+        #respond textarea {
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -o-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            border-radius: 5px;
+
+            line-height: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="banner" class="body">
+
+        <nav>
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">portfolio</a></li>
+
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+    </header><!-- /#banner -->
+
+    <aside id="featured" class="body">
+        <article>
+            <figure>
+                <img src="images/temp/sm-logo.gif" alt="Smashing Magazine" />
+            </figure>
+            <hgroup>
+
+                <h2>Featured Article</h2>
+                <h3><a href="#">HTML5 in Smashing Magazine!</a></h3>
+            </hgroup>
+            <p>Discover how to use Graceful Degradation and Progressive Enhancement techniques to achieve an
+                outstanding, cross-browser <a href="http://dev.w3.org/html5/spec/Overview.html" rel="external">HTML5</a>
+                and <a href="http://www.w3.org/TR/css3-roadmap/" rel="external">CSS3</a> website today!</p>
+
+        </article>
+    </aside><!-- /#featured -->
+
+    <div id="respond">
+
+        <h3>Leave a Comment</h3>
+
+        <form action="post_comment.php" method="post" id="commentform">
+
+            <label for="comment_author" class="required">Your name</label>
+            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+            <label for="email" class="required">Your email;</label>
+            <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+
+            <label for="comment" class="required">Your message</label>
+            <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+            <-- comment_post_ID value hard-coded as 1 -->
+                <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+                <input name="submit" type="submit" value="Submit comment" />
+
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    #mainContainer {
+        height: 100vh;
+        background-color: #FFFFCC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #calciContainer {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+    }
+
+    #MainCalculator {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        zoom: 5;
+    }
+
+    #display {
+        display: flex;
+
+
+    }
+
+    #elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+        background-color: #FF6601;
+        color: chartreuse;
+    }
+</style>
+
+<body>
+
+    <div id="mainContainer">
+
+        <div id="calciContainer">
+
+
+            <div id="MainCalculator">
+
+
+                <div id="display">
+                    <div id="in" style="width: 50%; display: flex;"><input id="result" type="text"
+                            onkeypress="enter(event);"></div>
+                </div>
+
+                <div id="elements">
+                    <div id="keys" style="display: flex;  ;">
+
+                        <button onclick="dis('1');" id="1">1</button>
+                        <button onclick="dis('2');" id="2">2</button>
+                        <button onclick="dis('3');" id="3">3</button>
+                        <button onclick="dis('+');" id="+">+</button>
+                    </div>
+                    <div style="display: flex; ">
+                        <button onclick="dis('4');" id="4">4</button>
+                        <button onclick="dis('5');" id="5">5</button>
+                        <button onclick="dis('6');" id="6">6</button>
+                        <button onclick="dis('-');" id="-">-</button>
+                    </div>
+                    <div style="display: flex;">
+                        <button onclick="dis('7');" id="7">7</button>
+                        <button onclick="dis('8');" id="8">8</button>
+                        <button onclick="dis('9');" id="9">9</button>
+                        <button onclick="dis('*');" id="*">*</button>
+                    </div>
+                    <div style="display:flex ;">
+                        <button onclick="clr();" id="clear">c</button>
+                        <button onclick="dis('0');" id="0">0</button>
+                        <button onclick="solve();" id="=">=</button>
+                        <button onclick="divide('*');" id="/">/</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="cal.js"></script>
+</body>
+
+</html>
