@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #container {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #TODO-container {
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        #listArea {
+
+            border: .5px solid black;
+            visibility: hidden;
+
+
+        }
+
+        #list-button {
+            display: flex;
+
+        }
+
+        button {
+            background-color: burlywood;
+            border: .2px solid grey;
+            border-radius: 50%;
+            color: black;
+        }
+
+        input[type=text] {
+            border: none;
+            border-bottom: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="TODO-container" style="font-size: 24px;">
+            <div style="color: blanchedalmond; background-color: darkgoldenrod;">TO-DO List</div>
+
+            <div style="width: 100%;"><input type="text" name="inputBox" id="IB"><button id="all"
+                    onclick="">ALL</button>
+                <button id="active" onclick="active();">ACTIVE</button>
+                <button id="done" onclick="">DONE</button> </div>
+
+            <div id="listBlock">
+
+                <div id="listArea" style="background-color: white;">
+
+
+                    <div id="listItem"></div>
+                    <button id="complete" onclick="done(this);">Done </button>
+                    <button id="edit" onclick="">Edit</button>
+                    <button id="delete" onclick="deleteitem(this)">Delete</button>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div><input type="text" name="inputBoxToAdd" class="ibx" id="IB2I" style="width: 100%;"
+                        onkeypress="enter(event);"> <button id="addInList" onclick="Addinlist();">Add in
+                        List</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="TODO.js"></script>
+</body>
+
+</html>

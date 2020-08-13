@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+    }
+
+    .navbar {}
+</style>
+
+<body>
+
+
+    <div>
+
+
+        <div class="navbar">
+            <ul
+                style="display: flex; justify-content: space-between; align-items: center; list-style-type: none; background-color: burlywood;">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <input type="text" name="input_box" id="ib" onkeypress="enter(event);">
+                <button id="Comment" onclick="comments();">Comment</button>
+            </div>
+
+            <div>
+                <button id="like" onclick="likeCount();">Like</button>
+                <button id="Dislike" onclick="dis();">Dislike</button>
+            </div>
+
+
+        </div>
+
+        <div id="cA">
+
+            <div id="addComments" style="display: flex; justify-content: space-between; visibility: hidden;">
+
+                <div id="actualComment"> </div>
+                <button onclick="deleteComment(this);">DELETE</button>
+            </div>
+
+        </div>
+
+        <script src="vinita_mam_labjs.js"></script>
+
+    </div>
+
+</body>
+
+</html>
